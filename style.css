@@ -1,0 +1,160 @@
+/*
+ * IP Slider Win Block
+ */
+.ip-slider-win__section {
+  padding-top: 35px;
+  padding-bottom: 85px;
+}
+.ip-slider-win__title {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  line-height: 29px;
+  color: #64a104;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ip-slider-win {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ip-slider-win__col {
+}
+.ip-slider-win__col_1 {
+  text-align: center;
+}
+.ip-slider-win__col_2 {
+  margin-top: 15px;
+}
+  @media(min-width: 800px) {
+    .ip-slider-win__col_2 {
+      margin-top: 0;
+    }
+  }
+.ip-slider-win__item {
+  max-width: 258px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  @media(min-width: 800px) {
+    .ip-slider-win__item {
+      max-width: unset;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+.ip-slider-win__type {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+.ip-slider-win__img {
+  max-width: 100%;
+  display: inline-block !important;
+  margin: 15px 0 0 0;
+}
+.ip-slider-win__size {
+  color: #878787;
+  font-size: 13px;
+  font-style: italic;
+  margin: 15px 0 0 0;
+}
+.ip-slider-win__size a {
+  color: #64a104;
+}
+.ip-slider-win__list {
+}
+.ip-slider-win__list-item {
+  margin-bottom: 6px;
+  padding: 2px 0 2px 35px;
+  background: url(images/ip-slider-win_list.png) center left no-repeat;
+  line-height: 1.2;
+}
+.ip-slider-win__price {
+  color: #64a104;
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+}
+.btn {
+  display: inline-block;
+  color: #fff;
+  background: #4ac54a;
+  padding: 12px 22px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  box-shadow: 5px 5px 9px 0 rgb(0 0 0 / 10%);
+  transition: all ease .5s;
+}
+.btn-yellow {
+  color: #2f2d18;
+  background: #f4e034;
+}
+.btn-yellow:hover {
+  background: #ffed4f;
+}
+
+/* Slick Slider */
+.ip-slider-win .slick-prev,
+.ip-slider-win .slick-next {
+  position: absolute;
+  bottom: 0;
+  border: 1px #f7f7f7 solid;
+  transform: rotate(0);
+  background: #f7f7f7;
+}
+.ip-slider-win .slick-prev {
+  right: 50%;
+  margin: 0 -46px 0 0;
+}
+.ip-slider-win .slick-next {
+  left: 50%;
+  margin: 0 0 0 -46px;
+}
+.ip-slider-win .slick-prev:hover,
+.ip-slider-win .slick-next:hover {
+  background: #4ac54a;
+  border: 1px #4ac54a solid;
+}
+.ip-slider-win .slick-next:after,
+.ip-slider-win .slick-prev:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  border-top: 1px #9c9c9c solid;
+  border-left: 1px #9c9c9c solid;
+}
+.ip-slider-win .slick-prev:after {
+  margin-left: -2px;
+  margin-top: -5px;
+  transform: rotate(-45deg);
+}
+.ip-slider-win .slick-next:after {
+  margin-left: -6px;
+  margin-top: -5px;
+  transform: rotate(135deg);
+}
+.ip-slider-win .slick-arrow {
+  width: 46px;
+  height: 46px;
+  top: auto;
+  bottom: -50px;
+  margin: 0;
+  background: #fff;
+  color: transparent;
+  cursor: pointer;
+}
+.ip-slider-win .slick-prev:hover:after,
+.ip-slider-win .slick-next:hover:after {
+  border-color: #fff;
+}
